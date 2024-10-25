@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity">
+
+    <!-- Título da Tela -->
+    <TextView
+        android:id="@+id/tituloTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resumo da Conta"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Saldo da Conta -->
+    <TextView
+        android:id="@+id/saldoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saldo da Conta: R$ 0,00"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tituloTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Limite do Cartão -->
+    <TextView
+        android:id="@+id/limiteCartaoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Limite do Cartão: R$ 0,00"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/saldoTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Botão Ver Extrato -->
+    <Button
+        android:id="@+id/verExtratoButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ver Extrato"
+        app:layout_constraintTop_toBottomOf="@id/limiteCartaoTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Botão Adicionar Transação -->
+    <Button
+        android:id="@+id/adicionarTransacaoButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Adicionar Transação"
+        app:layout_constraintTop_toBottomOf="@id/verExtratoButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Botão Ver Limite do Cartão -->
+    <Button
+        android:id="@+id/verLimiteCartaoButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ver Limite do Cartão"
+        app:layout_constraintTop_toBottomOf="@id/adicionarTransacaoButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Botão Ver Gráfico de Gastos -->
+    <Button
+        android:id="@+id/verGraficoGastosButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ver Gráfico de Gastos"
+        app:layout_constraintTop_toBottomOf="@id/verLimiteCartaoButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Botão Definir Meta de Economia -->
+    <Button
+        android:id="@+id/definirMetaEconomiaButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Definir Meta de Economia"
+        app:layout_constraintTop_toBottomOf="@id/verGraficoGastosButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Botão Ver Despesas por Categoria -->
+    <Button
+        android:id="@+id/verDespesasPorCategoriaButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Despesas por Categoria"
+        app:layout_constraintTop_toBottomOf="@id/definirMetaEconomiaButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Botão Histórico de Transações -->
+    <Button
+        android:id="@+id/historicoTransacoesButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Histórico de Transações"
+        app:layout_constraintTop_toBottomOf="@id/verDespesasPorCategoriaButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Botão Definir Orçamento -->
+    <Button
+        android:id="@+id/definirOrcamentoButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Definir Orçamento"
+        app:layout_constraintTop_toBottomOf="@id/historicoTransacoesButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Botão Definir Alertas de Gasto -->
+    <Button
+        android:id="@+id/definirAlertasButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Definir Alertas de Gasto"
+        app:layout_constraintTop_toBottomOf="@id/definirOrcamentoButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Botão Conversor de Moedas -->
+    <Button
+        android:id="@+id/converterMoedaButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Conversor de Moedas"
+        app:layout_constraintTop_toBottomOf="@id/definirAlertasButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
